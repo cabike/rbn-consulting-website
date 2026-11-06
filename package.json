@@ -1,0 +1,19 @@
+{
+  "name": "rbn-consulting-website",
+  "version": "1.0.0",
+  "description": "Repo for RBN Consulting's website",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "type": "module",
+  "dependencies": {
+    "@astrojs/react": "^7.1.4",
+    "@tailwindcss/vite": "^4.3.5",
+    "astro": "^7.4.7",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.5"
+  }
+}

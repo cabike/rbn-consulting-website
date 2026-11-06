@@ -1,0 +1,107 @@
+---
+import '../styles/global.css';
+import ReadinessCalculator from '../components/ReadinessCalculator.jsx';
+import ContactForm from '../components/ContactForm.jsx';
+
+const services = [
+  { number: '01', icon: '◇', title: 'Security strategy', description: 'A practical roadmap that connects cybersecurity priorities to your business goals.', tags: 'STRATEGY  /  GOVERNANCE' },
+  { number: '02', icon: '◎', title: 'Risk & resilience', description: 'Understand what matters most, prepare for disruption, and build confidence in your response.', tags: 'RISK  /  READINESS' },
+  { number: '03', icon: '⌁', title: 'Executive advisory', description: 'Experienced security perspective for leadership teams navigating complex decisions.', tags: 'LEADERSHIP  /  ADVISORY' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="RBN Consulting helps leaders turn cybersecurity complexity into clear, confident action." />
+    <meta name="theme-color" content="#101d24" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>RBN Consulting | Cybersecurity, with clarity</title>
+  </head>
+  <body id="top" class="font-sans antialiased">
+    <header class="bg-ink text-white">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-6 lg:px-10">
+        <a href="#" class="flex items-center gap-3" aria-label="RBN Consulting home">
+          <span class="flex size-10 items-center justify-center rounded-full border border-[#c7f36b] text-xl font-bold text-[#c7f36b]">R</span>
+          <span class="text-sm font-bold tracking-[0.13em]">RBN <span class="font-normal text-slate-300">CONSULTING</span></span>
+        </a>
+        <nav aria-label="Main navigation" class="hidden items-center gap-9 text-sm text-slate-300 md:flex">
+          <a class="transition hover:text-white" href="#services">What we do</a>
+          <a class="transition hover:text-white" href="#approach">Our approach</a>
+          <a class="transition hover:text-white" href="#readiness">Readiness check</a>
+        </nav>
+        <a href="#contact" class="rounded-md border border-white/30 px-4 py-2.5 text-xs font-semibold transition hover:border-[#c7f36b] hover:text-[#c7f36b] sm:px-5 sm:text-sm">Let’s talk <span aria-hidden="true" class="ml-2">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden bg-ink text-white">
+        <div aria-hidden="true" class="pointer-events-none absolute -right-52 top-0 size-[720px] rounded-full border border-white/5"></div>
+        <div aria-hidden="true" class="pointer-events-none absolute -right-28 top-24 size-[520px] rounded-full border border-white/5"></div>
+        <div class="relative mx-auto grid max-w-7xl gap-16 px-6 pb-20 pt-16 lg:grid-cols-[1.1fr_.9fr] lg:items-end lg:gap-20 lg:px-10 lg:pb-28 lg:pt-28">
+          <div>
+            <div class="inline-flex items-center gap-3 rounded-full border border-white/15 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-300"><span class="size-2 rounded-full bg-[#c7f36b]"></span> Cybersecurity for the bigger picture</div>
+            <h1 class="mt-8 max-w-3xl text-5xl font-medium leading-[1.08] tracking-[-0.05em] sm:text-6xl lg:text-[76px]">Confidence in a <span class="text-[#c7f36b]">complex</span> world.</h1>
+            <p class="mt-7 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">Cybersecurity shouldn’t stand in the way of progress. We help leaders see risk clearly, make informed decisions, and move forward with confidence.</p>
+            <div class="mt-10 flex flex-wrap items-center gap-7">
+              <a href="#contact" class="rounded-md bg-[#c7f36b] px-6 py-4 text-sm font-bold text-ink transition hover:bg-[#d8ff88]">Start a conversation <span aria-hidden="true" class="ml-3">↗</span></a>
+              <a href="#services" class="text-sm font-semibold text-white transition hover:text-[#c7f36b]">Explore our services <span aria-hidden="true" class="ml-2">↓</span></a>
+            </div>
+          </div>
+          <div class="relative rounded-2xl border border-white/10 bg-[#172a31] p-7 sm:p-10">
+            <div class="flex items-center justify-between text-xs uppercase tracking-[0.18em] text-slate-400"><span>Clarity creates confidence</span><span class="text-[#c7f36b]">✳</span></div>
+            <div class="relative my-12 flex min-h-48 items-center justify-center" aria-hidden="true">
+              <div class="absolute size-48 rounded-full border border-white/10 sm:size-56"></div>
+              <div class="absolute size-36 rounded-full border border-[#c7f36b]/30 sm:size-44"></div>
+              <div class="absolute h-px w-full bg-white/10"></div><div class="absolute h-full w-px bg-white/10"></div>
+              <div class="z-10 flex size-24 items-center justify-center rounded-full border border-[#c7f36b]/50 bg-[#233c3c] text-4xl text-[#c7f36b]">✳</div>
+              <span class="absolute right-[20%] top-5 size-2 rounded-full bg-[#c7f36b]"></span>
+            </div>
+            <div class="flex items-end justify-between border-t border-white/10 pt-5"><p class="max-w-56 text-sm leading-6 text-slate-300">A clearer path from uncertainty to action.</p><span class="text-2xl text-[#c7f36b]">↗</span></div>
+          </div>
+        </div>
+        <div class="border-t border-white/10"><div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-6 text-xs font-medium uppercase tracking-[0.16em] text-slate-400 lg:px-10"><span>Built for leaders. Grounded in reality.</span><span class="text-slate-500">Strategy <span class="mx-3 text-[#c7f36b]">/</span> Resilience <span class="mx-3 text-[#c7f36b]">/</span> Trust</span></div></div>
+      </section>
+
+      <section id="services" class="mx-auto max-w-7xl scroll-mt-8 px-6 py-24 lg:px-10 lg:py-32">
+        <div class="grid gap-6 md:grid-cols-2 md:items-end">
+          <div><p class="text-xs font-bold uppercase tracking-[0.2em] text-[#66883c]">01 / What we do</p><h2 class="mt-5 max-w-xl text-4xl font-medium leading-tight tracking-[-0.04em] sm:text-5xl">Security that moves your business forward.</h2></div>
+          <p class="max-w-md leading-7 text-[#65736f] md:justify-self-end">From the boardroom to the front line, we make cybersecurity more understandable, actionable, and aligned with what matters to you.</p>
+        </div>
+        <div class="mt-14 grid gap-4 md:grid-cols-3">
+          {services.map((service) => <article class="group flex min-h-80 flex-col rounded-xl border border-[#dce3db] bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-[#1c3025]/5">
+            <div class="flex items-start justify-between"><span class="flex size-12 items-center justify-center rounded-lg bg-[#edf4df] text-2xl text-[#4c7026]">{service.icon}</span><span class="text-xs text-[#9aa8a0]">{service.number}</span></div>
+            <h3 class="mt-10 text-xl font-semibold tracking-tight">{service.title}</h3><p class="mt-3 text-sm leading-7 text-[#65736f]">{service.description}</p>
+            <p class="mt-auto pt-8 text-[10px] font-bold tracking-[0.15em] text-[#82918a]">{service.tags}</p>
+          </article>)}
+        </div>
+      </section>
+
+      <section id="approach" class="scroll-mt-8 bg-[#eaf0e5]">
+        <div class="mx-auto grid max-w-7xl gap-12 px-6 py-24 md:grid-cols-2 lg:gap-24 lg:px-10 lg:py-32">
+          <div><p class="text-xs font-bold uppercase tracking-[0.2em] text-[#66883c]">02 / The RBN approach</p><h2 class="mt-5 max-w-lg text-4xl font-medium leading-tight tracking-[-0.04em] sm:text-5xl">A partner for the decisions that matter.</h2><p class="mt-6 max-w-lg leading-7 text-[#65736f]">Technology is only part of the picture. We bring context, perspective, and a business-first mindset to the challenges that keep leaders up at night.</p><a href="#contact" class="mt-8 inline-block border-b border-ink pb-2 text-sm font-semibold">Get to know us <span aria-hidden="true" class="ml-3">↗</span></a></div>
+          <div class="divide-y divide-[#cdd9ca]">
+            <div class="flex gap-6 py-6 first:pt-0"><span class="text-sm text-[#789163]">01</span><div><h3 class="font-semibold">Listen first</h3><p class="mt-2 text-sm leading-7 text-[#65736f]">We start with your business, your people, and the challenges unique to you.</p></div></div>
+            <div class="flex gap-6 py-6"><span class="text-sm text-[#789163]">02</span><div><h3 class="font-semibold">Make the complex clear</h3><p class="mt-2 text-sm leading-7 text-[#65736f]">No noise or unnecessary jargon. Just a clear view of your risks and options.</p></div></div>
+            <div class="flex gap-6 py-6"><span class="text-sm text-[#789163]">03</span><div><h3 class="font-semibold">Make progress together</h3><p class="mt-2 text-sm leading-7 text-[#65736f]">Practical recommendations that meet you where you are and help you move forward.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="readiness" class="scroll-mt-8 bg-[#12232a] text-white">
+        <div class="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:grid-cols-2 md:items-center lg:gap-24 lg:px-10 lg:py-32">
+          <div><p class="text-xs font-bold uppercase tracking-[0.2em] text-[#c7f36b]">03 / A place to start</p><h2 class="mt-5 max-w-lg text-4xl font-medium leading-tight tracking-[-0.04em] sm:text-5xl">How ready is your organization?</h2><p class="mt-6 max-w-md leading-7 text-slate-300">A little clarity goes a long way. Take a quick look at four foundational practices that support a more resilient business.</p><p class="mt-8 max-w-md border-l-2 border-[#c7f36b] pl-5 text-sm leading-6 text-slate-400">This quick check is a conversation starter, not a formal security assessment.</p></div>
+          <ReadinessCalculator client:load />
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto grid max-w-7xl scroll-mt-8 gap-12 px-6 py-24 md:grid-cols-2 lg:gap-24 lg:px-10 lg:py-32">
+        <div><p class="text-xs font-bold uppercase tracking-[0.2em] text-[#66883c]">04 / Let’s connect</p><h2 class="mt-5 max-w-lg text-4xl font-medium leading-tight tracking-[-0.04em] sm:text-5xl">Better security starts with a conversation.</h2><p class="mt-6 max-w-md leading-7 text-[#65736f]">Whether you have a specific challenge or aren’t sure where to begin, we’re here to help you find a way forward.</p><div class="mt-12 flex items-center gap-4 border-t border-[#dce3db] pt-6"><span class="flex size-11 items-center justify-center rounded-full bg-[#eaf0e5] text-xl">↗</span><p class="text-sm font-semibold">Let’s make your next move a confident one.</p></div></div>
+        <ContactForm client:load />
+      </section>
+    </main>
+    <footer class="bg-ink text-white"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-6 py-10 sm:flex-row sm:items-center lg:px-10"><a href="#" class="flex items-center gap-3 text-sm font-bold tracking-[0.13em]"><span class="flex size-9 items-center justify-center rounded-full border border-[#c7f36b] text-lg text-[#c7f36b]">R</span> RBN <span class="-ml-2 font-normal text-slate-300">CONSULTING</span></a><p class="text-xs text-slate-400">© {new Date().getFullYear()} RBN Consulting. Built for a more resilient future.</p><a href="#top" class="text-xs text-slate-300 hover:text-[#c7f36b]">Back to top ↑</a></div></footer>
+  </body>
+</html>

@@ -27,6 +27,11 @@ go.work.sum
 
 # env file
 .env
+.env.*
+!.env.example
+node_modules/
+dist/
+.astro/
 
 # Editor/IDE
 # .idea/

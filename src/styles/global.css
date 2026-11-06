@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --color-ink: #101d24;
+  --color-moss: #c7f36b;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f7f8f4; color: #101d24; }
+::selection { background: #c7f36b; color: #101d24; }
+button, input, select, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #97c83e; outline-offset: 3px; }
