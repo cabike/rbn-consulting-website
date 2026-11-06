@@ -22,7 +22,7 @@ export default function ReadinessCalculator() {
           <h3 className="mt-2 text-xl font-semibold text-white">Where do you stand?</h3>
           <p className="mt-2 text-sm leading-6 text-slate-300">Select the practices your organization has in place.</p>
         </div>
-        <span className="rounded-full border border-white/15 px-3 py-1 text-xs text-slate-300">01 / 04</span>
+        <span className="rounded-full border border-white/15 px-3 py-1 text-xs text-slate-300">4 practices</span>
       </div>
       <div className="mt-6 space-y-2">
         {questions.map((question, index) => (
